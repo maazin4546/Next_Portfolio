@@ -12,6 +12,10 @@ export const CanvasRevealEffect = ({
     dotSize,
     showGradient = true,
 }: {
+    /**
+     * 0.1 - slower
+     * 1.0 - faster
+     */
     animationSpeed?: number;
     opacities?: number[];
     colors?: number[][];
@@ -186,7 +190,7 @@ const ShaderMaterial = ({
     uniforms: Uniforms;
 }) => {
     const { size } = useThree();
-    const ref = useRef<THREE.Mesh>();
+    const ref = useRef < THREE.Mesh > ();
     let lastFrameTime = 0;
 
     useFrame(({ clock }) => {

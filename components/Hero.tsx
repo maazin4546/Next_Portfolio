@@ -5,6 +5,7 @@ import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 import Typed from 'typed.js';
 import React, { useRef, useEffect } from 'react';
+import Link from "next/link";
 
 const Hero = () => {
 
@@ -80,13 +81,13 @@ const Hero = () => {
                         Hi! I&apos;m <span className="font-semibold text-gray-300">Maazin Abdullah</span>, a Professional <span className="text-purple" ref={el} />
                     </p>
 
-                    <a target="_blank" href="https://drive.google.com/file/d/1MHNSbVStB2sXqdngguffW_nAGgj2-S0X/view?usp=drivesdk">
+                    <Link target="_blank" href="https://drive.google.com/file/d/1MHNSbVStB2sXqdngguffW_nAGgj2-S0X/view?usp=drivesdk">
                         <MagicButton
                             title="Resume"
                             icon={<FaArrowDown />}
                             position="right" 
                         />
-                    </a>
+                    </Link>
                 </div>
             </div>
         </div>
